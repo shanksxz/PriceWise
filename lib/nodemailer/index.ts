@@ -97,9 +97,6 @@ export const sendEmail = async (emailContent: EmailContent, sendTo: string[]) =>
     subject: emailContent.subject,
   }
 
-  console.log("------Inside sendMail F*n--------")
-  console.log(process.env.MAIL_USER)
-
   transporter.sendMail(mailOptions, (error: any, info: any) => {
     if(error) return console.log(error);
     
