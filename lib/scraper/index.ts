@@ -19,8 +19,7 @@ export async function scrapeAmazonProduct(url : string) {
       port,
       rejectUnauthorized: false,
     }
-    
-  
+
     
     try {
         const response = await axios.get(url, options)
